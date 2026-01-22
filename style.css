@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@font-face {
+  /* This is the internal name CSS uses to identify the file */
+  font-family: 'Pouf'; 
+  src: url('./assets/fonts/PoufV05-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+ 
+  --font-pouf: "Pouf", ui-sans-serif, system-ui;
+}
