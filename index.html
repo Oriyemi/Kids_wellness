@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kid Wellness</title>
   <link rel="shortcut icon" href="./assets/images/flower.svg" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="./style.css">
 
 </head>
@@ -15,31 +15,43 @@
 
 <body>
     <main>
-        <div  class="flex flex-col md:flex-row items-center justify-between px-4 md:px-10" id="nav-parent">
-           <nav class="w-full md:w-auto">
-                <ul class="flex flex-wrap justify-center md:justify-start gap-4 py-6 text-sm md:text-base">
-                    <i></i>
-                    <li><a href="#"></a>Shop All</li>
-                     <li><a href="#"></a>Starter Kit</li>
-                      <li><a href="#"></a>Multivitamin</li>
-                       <li><a href="#"></a>Immunity</li>
-                        <li><a href="#"></a>Pro+biotics</li>
-                         <img src="./assets/images/imgi_5_koa-primarylogo-zinc_web_2_aa42876d-23ed-4af7-96bc-71c9e7604f2c.svg" alt="logo" class="w-16 md:w-20 mx-4  ">
-                        
-                </ul>
-            </nav>
-           
-            <nav>
-                <ul class="flex gap-6 text-sm md:text-base pb-6 md:pb-0 ">
-                    <li><a href=""></a>Community</li>
-                    <li><a href=""></a>About</li>
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                </ul>
-            </nav>
+        <nav id="nav-parent" class="sticky top-0 z-50 flex items-center justify-between px-4 md:px-10 py-4 bg-[#ccd0ef] transition-colors duration-500" id="nav-parent">
+    
+          <div class="flex-1 hidden lg:flex items-center gap-6">
+            <i class="fa-solid fa-bars text-2xl cursor-pointer hover:text-[#fb693e] transition"></i>
+           <ul class="flex items-center gap-5 font-medium text-[15px] whitespace-nowrap">
+            <li class="hover:text-[#fb693e] transition"><a href="#">Shop All</a></li>
+            <li class="hover:text-[#fb693e] transition"><a href="#">Starter Kit</a></li>
+            <li class="hover:text-[#fb693e] transition"><a href="#">Multivitamin</a></li>
+            <li class="hover:text-[#fb693e] transition"><a href="#">Immunity</a></li>
+            <li class="hover:text-[#fb693e] transition"><a href="#">Pre+Probiotic</a></li>
+            </ul>
+          </div>
 
-        </div>
+          <div class="flex-none order-first lg:order-0">
+           <img src="./assets/images/imgi_5_koa-primarylogo-zinc_web_2_aa42876d-23ed-4af7-96bc-71c9e7604f2c.svg" alt="logo" class="w-16 md:w-20 lg:w-28">
+         </div>
+
+         <div class="flex-1 flex items-center justify-end gap-4 md:gap-6">
+           <ul class="hidden lg:flex items-center gap-6 font-medium text-[15px] mr-4">
+            <li class="hover:text-[#fb693e] transition"><a href="#">Community</a></li>
+            <li class="hover:text-[#fb693e] transition"><a href="#">About</a></li>
+           </ul>
+        
+            <div class="flex items-center gap-4 md:gap-5">
+              <i class="fa-solid fa-magnifying-glass text-xl md:text-2xl cursor-pointer hover:text-[#fb693e]"></i>
+            
+             <i class="fa-solid fa-user text-2xl hidden lg:flex cursor-pointer hover:text-[#fb693e]"></i>
+            
+             <div class="relative cursor-pointer">
+                <i class="fa-solid fa-cart-shopping text-xl md:text-2xl hover:text-[#fb693e]"></i>
+                <span class="absolute -top-2 -right-2 bg-[#fb693e] text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full">0</span>
+             </div>
+
+             <i class="fa-solid fa-bars-staggered text-xl lg:hidden cursor-pointer"></i>
+           </div>
+          </div>
+       </nav>
         
         <div class="bg-[#ccd0ef] min-h-screen flex text-center px-4 justify-center items-center">
             <div >
@@ -286,8 +298,8 @@
               </div>
              </div>
             </div>
-            <div>
-              <img src="./assets/images/mother_kid.png" alt="mother_kid" class="size-full -mx-8 object-cover ">
+            <div class="-mx-8">
+              <img src="./assets/images/mother_kid.png" alt="mother_kid" class="size-full ">
             </div>
             <!-- faqs -->
              <div class="">
