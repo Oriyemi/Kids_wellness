@@ -10,13 +10,12 @@
 </head>
 <body>
     <main>
-         <!-- nav-bar -->
         <nav id="nav-parent" class="sticky top-0 z-50 flex items-center justify-between px-4 md:px-10 py-4 bg-[#ccd0ef] transition-colors duration-500" id="nav-parent">
     
           <div class="flex-1 hidden lg:flex items-center gap-6">
             <i class="fa-solid fa-bars text-2xl cursor-pointer hover:text-[#fb693e] transition"></i>
            <ul class="flex items-center gap-5 font-medium text-[15px] whitespace-nowrap">
-            <li class="hover:text-[#fb693e] transition"><a href="/shop-all.html">Shop All</a></li>
+            <li class="hover:text-[#fb693e] transition"><a href="#">Shop All</a></li>
             <li class="hover:text-[#fb693e] transition"><a href="#">Starter Kit</a></li>
             <li class="hover:text-[#fb693e] transition"><a href="#">Multivitamin</a></li>
             <li class="hover:text-[#fb693e] transition"><a href="#">Immunity</a></li>
@@ -33,6 +32,21 @@
             <li class="hover:text-[#fb693e] transition"><a href="#">Community</a></li>
             <li class="hover:text-[#fb693e] transition"><a href="#">About</a></li>
            </ul>
+        
+            <div class="flex items-center gap-4 md:gap-5">
+              <i class="fa-solid fa-magnifying-glass text-xl md:text-2xl cursor-pointer hover:text-[#fb693e]"></i>
+            
+             <i class="fa-solid fa-user text-2xl hidden lg:flex cursor-pointer hover:text-[#fb693e]"></i>
+            
+             <div class="relative cursor-pointer">
+                <i class="fa-solid fa-cart-shopping text-xl md:text-2xl hover:text-[#fb693e]"></i>
+                <span class="absolute -top-2 -right-2 bg-[#fb693e] text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full">0</span>
+             </div>
+
+             <i class="fa-solid fa-bars-staggered text-xl lg:hidden cursor-pointer"></i>
+           </div>
+          </div>
+       </nav>
         
             <div class="flex items-center gap-4 md:gap-5">
               <i class="fa-solid fa-magnifying-glass text-xl md:text-2xl cursor-pointer hover:text-[#fb693e]"></i>
