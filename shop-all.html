@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop-All</title>
+    <link rel="shortcut icon" href="./assets/images/flower.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body class="bg-[#F1E9DC]">
+   <main >
+     <nav id="nav-parent" class="sticky top-0 z-50 flex items-center justify-between px-4 md:px-10 py-4 bg-[#fee358] transition-colors duration-500" id="nav-parent">
+    
+          <div class="flex-1 hidden lg:flex items-center gap-6">
+            <i class="fa-solid fa-bars text-2xl cursor-pointer hover:text-[#fb693e] transition"></i>
+           <ul class="flex items-center gap-5 font-medium text-[15px] whitespace-nowrap">
+            <li class="hover:text-[#fb693e] transition"><a href="/shop-all.html">Shop All</a></li>
+            <li class="hover:text-[#fb693e] transition"><a href="#">Starter Kit</a></li>
+            <li class="hover:text-[#fb693e] transition"><a href="#">Multivitamin</a></li>
+            <li class="hover:text-[#fb693e] transition"><a href="#">Immunity</a></li>
+            <li class="hover:text-[#fb693e] transition"><a href="#">Pre+Probiotic</a></li>
+            </ul>
+          </div>
+
+          <div class="flex-none order-first lg:order-0">
+           <img src="./assets/images/imgi_5_koa-primarylogo-zinc_web_2_aa42876d-23ed-4af7-96bc-71c9e7604f2c.svg" alt="logo" class="w-16 md:w-20 lg:w-28">
+         </div>
+
+         <div class="flex-1 flex items-center justify-end gap-4 md:gap-6">
+           <ul class="hidden lg:flex items-center gap-6 font-medium text-[15px] mr-4">
+            <li class="hover:text-[#fb693e] transition"><a href="#">Community</a></li>
+            <li class="hover:text-[#fb693e] transition"><a href="#">About</a></li>
+           </ul>
+        
+            <div class="flex items-center gap-4 md:gap-5">
+              <i class="fa-solid fa-magnifying-glass text-xl md:text-2xl cursor-pointer hover:text-[#fb693e]"></i>
+            
+             <i class="fa-solid fa-user text-2xl hidden lg:flex cursor-pointer hover:text-[#fb693e]"></i>
+            
+             <div class="relative cursor-pointer">
+                <i class="fa-solid fa-cart-shopping text-xl md:text-2xl hover:text-[#fb693e]"></i>
+                <span class="absolute -top-2 -right-2 bg-[#fb693e] text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full">0</span>
+             </div>
+
+             <i class="fa-solid fa-bars-staggered text-xl lg:hidden cursor-pointer"></i>
+           </div>
+          </div>
+     </nav>
+       <!--Products  -->
+       <div class="bg-[#F1E9DC] min-h-screen flex text-center px-4 justify-center items-center">
+        <h1 class="font-pouf uppercase text-4xl sm:text-6xl md:text-8xl lg:text-9xl ">all products</h1>
+       </div>
+       <!-- product-flex -->
+        <div class="flex flex-col md:flex-row justify-center gap-4 items-center">
+          <div class="flex flex-col items-center ">
+            <div class="bg-[#90E0D3] rounded-[100px] p-10 flex justify-center items-center">
+              <img src="./assets/images/starter.png" alt="starter-kit" class="w-42 md:w-48  h-auto max-w-md object-contain">
+            </div>
+            <h1  class="font-pouf uppercase text-3xl lg:5xl pt-3">starter kit</h1>
+            <h2  class="capitalize">all 3 favourites with free shipping</h2>
+            <button class="px-6 mt-6  py-5 text-sm md:text-lg border border-none bg-yellow-400 rounded-xl ">
+            Shop Now
+            </button>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="bg-[#ff8561] rounded-[100px] p-10 flex justify-center items-center">
+              <img src="./assets/images/grow.png" alt="grow"  class="w-42 md:w-48 h-auto max-w-md object-contain ">
+            </div>
+            <h1 class="font-pouf uppercase text-3xl lg:5xl pt-3">grow+thrive</h1>
+            <h2  class="capitalize">kids Multivitamin</h2>
+            <button class="px-6 mt-6  py-5 text-sm md:text-lg border border-none bg-yellow-400 rounded-xl ">
+            Shop Now
+            </button>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="bg-[#fee459] rounded-[100px] p-10 flex justify-center items-center">
+              <img src="./assets/images/boost-bundle.png" alt="boost"  class="w-42 md:w-48 h-auto max-w-md object-contain ">
+            </div>
+            <h1 class="font-pouf uppercase text-3xl lg:5xl pt-3">boost</h1>
+            <h2  class="capitalize">vitamins for immunity support</h2>
+            <button class="px-6 mt-6  py-5 text-sm md:text-lg border border-none bg-yellow-400 rounded-xl ">
+            Shop Now
+            </button>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class=" bg-[#90E0D3] rounded-[100px] p-10 flex justify-center items-center">
+              <img src="./assets/images/tummy-time.png" alt="tummy-time"  class="w-42 md:w-48 h-auto max-w-md object-contain ">
+            </div>
+            <h1 class="font-pouf uppercase text-3xl lg:5xl pt-3">tummy time</h1>
+            <h2 class="capitalize">kids pre + probiotic</h2>
+            <button class="px-6 mt-6  py-5 text-sm md:text-lg border border-none bg-yellow-400 rounded-xl ">
+            Shop Now
+            </button>
+          </div>
+        </div>
+        <!-- faq -->
+         <div>
+          <div class="border-2 border-black bg-[#f8f4ed] rounded-3xl p-9 w-[90%] mx-auto  mt-40  flex flex-col  justify-between">
+                <h1 class="font-pouf uppercase text-3xl pt-5 pb-10">FAQs</h1>
+                <details class=" border-black border-b-2 py-7">
+                 <summary class="hover:text-[#fb693e] transition duration-300 text-2xl">What makes KOA Kids different from other vitamin brands?</summary>
+                  <p class="pt-5 text-2xl">KOA Kids combines cutting-edge nutritional science with serious fun—no added sugar, no artificial colours, flavours, or sweeteners. Just powerful, science-backed ingredients in formats kids actually want to take. We make healthy habits easy, playful, and parent-approved.</p>
+                </details>
+                <details  class=" border-black border-b-2 py-7">
+                 <summary class="hover:text-[#fb693e] transition duration-300 text-2xl">Are KOA Kids vitamins safe?</summary>
+                  <p class="pt-5 text-2xl">All KOA products are made in Australia in TGA-licensed facilities and are listed with the Therapeutic Goods Administration (TGA), meaning they meet strict standards for quality, manufacturing, and evidence-based ingredients. They're designed for kids aged 2 and up, using clean ingredients chosen with care for growing bodies.</p>
+                </details>
+                <details  class=" border-black border-b-2 py-7">
+                 <summary class="hover:text-[#fb693e] transition duration-300 text-2xl">What ages are KOA products suitable for?</summary>
+                  <p class="pt-5 text-2xl">Our products are designed for kids aged 2 and up. Each formula is carefully dosed for growing bodies, and we always recommend supervising younger children while chewing.</p>
+                </details>
+                <details  class=" border-black border-b-2 py-7">
+                  <summary class="hover:text-[#fb693e] transition duration-300 text-2xl">What’s inside your vitamins?</summary>
+                  <p class="pt-5 text-2xl">Only the good stuff. Every ingredient is purposefully chosen, backed by research, and free from artificial colours, flavours, and sweeteners. Sweetness comes from monk fruit and thaumatin—nothing fake here.</p>
+                </details>
+                
+              
+                <div class="border-2 border-black rounded-3xl p-5 mt-14 my-5 lg:p-16  flex flex-col  bg-[#fee358]">
+                  <div class="flex flex-col gap-2 lg:flex-row lg:gap-8 justify-between items-center ">
+                    <div>
+                    <h1 class="font-pouf text-4xl lg:text-6xl uppercase">Join the KOA family!</h1>
+                   </div>
+                   <div >
+                    <p class="p-4 text-xl">Get honest wellness tips, kid-friendly inspo, and all things vibrant living — straight to your inbox.</p>
+                    <input class="placeholder-gray-500 border border-black rounded-2xl p-5 pt-2 focus:placeholder-gray-500" placeholder="Enter your email">
+                    <p class="pt-4">By subscribing, you agree to receive marketing emails and accept our Terms & Conditions.</p>
+    
+    
+                  </div>
+                  </div>
+                </div>
+              </div>
+         </div>
+
+   </main>
+   <!-- footer -->
+   <footer class="relative mt-40 z-10 flex justify-center h-full ">
+     <img src="./assets/images/footer_bg.png" alt="footer_bg" class="flex w-full h-full absolute top-0  -z-10 object-cover ">
+     <img src="./assets/images/footer-logo-1.svg" alt="footer_logo" class=" absolute  animate-spin [animation-duration:5000ms] -top-24 w-40 anim">         
+     <div class=" h-full mt-32 p-2" > 
+       <div class="flex flex-col lg:flex-row justify-between gap-6 items-center  " >
+         <div class="">
+            <h1 class="font-pouf text-3xl uppercase pb-2 ">Join the #koafamily</h1>
+             <p class="text-[15px] pb-4">Sign up for vita-goodness delivered to your inbox.</p>
+             <input class="placeholder-gray-500 border border-black rounded-3xl   px-16 py-2 focus:placeholder-gray-500"  placeholder="Enter your email">
+             <p class="text-[12px] pt-3">By subscribing, you agree to receive marketing emails and accept our Terms & Conditions.</p>
+             <i class="fa-brands fa-square-instagram "></i>
+            <i class="fa-brands fa-square-facebook"></i>
+         </div>
+         <div class=" flex  gap-16 text-[#1f2937] lg:mt-14">
+                      <!-- Left Column -->
+           <div>
+             <h3 class="font-semibold mb-6 text-lg">Meet the vitamins</h3>
+             <ul class="space-y-4">
+               <li>Starter Kit</li>
+               <li>Multi-Vitamin</li>
+               <li>Immunity</li>
+               <li>Pre + Probiotic</li>
+             </ul>
+           </div>
+            <!-- Right Column -->
+           <div>
+             <h3 class="font-semibold mb-6 text-lg">Support</h3>
+             <ul class="space-y-4">
+                <li>My Account</li>
+                <li>Contact Us</li>
+                <li>Shipping &amp; Returns</li>
+                <li>FAQs</li>
+                <li>Terms &amp; Conditions</li>
+                <li>Privacy Policy</li>
+                <li>Blog</li>
+             </ul>
+           </div>
+
+        </div>   
+     </div>
+      <div>
+       <div class="flex justify-center items-center gap-4  p-5">
+          <h1 class="border-2 border-black lg:border w-30 lg:w-100"></h1>
+          <img src="./assets/images/imgi_5_koa-primarylogo-zinc_web_2_aa42876d-23ed-4af7-96bc-71c9e7604f2c.svg" alt="logo-footer" class="w-30">
+          <h1  class="border-2 lg:border border-black w-30 lg:w-100" ></h1>
+      </div>
+      <div class="pt-5 ">
+        <p>© 2025, KOA Kids. All rights reserved.</p>
+         <div class="flex justify-center items-center pt-4 ">
+           <img src="./assets/images/imgi_44_footer-image-2.png" alt="footer-lmg" class=" w-30 lg:w-full " >
+            <img src="./assets/images/imgi_46_footer-image-4.png" alt="footer-lmg" class="w-30 lg:w-full ">
+            <img src="./assets/images/imgi_45_footer-image-3.png" alt="footer-lmg" class="w-30 lg:w-full ">
+         </div>
+     </div>                 
+   </div>
+    </div>
+
+  </footer>
+
+
+</body>
+</html>
