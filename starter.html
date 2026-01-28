@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
 </head>
-<body class="bg-[#F1E9DC]">
-    <main>
+<body >
+    <main class="bg-[#F1E9DC]">
         <nav id="nav-parent" class="sticky top-0 z-50 flex items-center justify-between px-4 md:px-10 py-4 bg-[#fee358] transition-colors duration-500" id="nav-parent">
     
           <div class="flex-1 hidden lg:flex items-center gap-6">
@@ -47,7 +47,7 @@
            </div>
           </div>
         </nav>
-        <div class="flex flex-col lg:flex-row justify-center items-center gap-5">
+        <div class="flex flex-col lg:flex-row lg:justify-center lg:items-center gap-5 ">
             <div class="flex flex-col md:flex-row justify-center gap-4 items-center">
                 <div class=" rounded p-10 flex flex-col justify-center gap-5 items-center w-74 h-70  overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-transparent [&::-webkit-scrollbar]:w-1
                 [&::-webkit-scrollbar-track]:bg-transparent
@@ -63,10 +63,11 @@
                     <img src="./assets/images/tummy-time.png" alt="">
                 </div>
             </div>
-           <div>
-             <div class="bg-[#f8f4ed]  border-black border-2 p-8 rounded-3xl "> 
+           <div class="m-5">
+            <!-- starter kit -->
+             <div class="bg-[#f8f4ed]  border-black border p-8 my-5  rounded-3xl "> 
                 <h1 class="font-pouf text-3xl lg:text-6xl uppercase">Starter kit</h1>
-                <h2>ALL 3 FAVOURITES WITH FREE SHIPPING</h2>
+                <h2 class="font-aeonik ">ALL 3 FAVOURITES WITH FREE SHIPPING</h2>
                 <div class="flex ">
                     <div>
                       <i class="fa fa-star text-amber-300" aria-hidden="true"></i>
@@ -77,37 +78,38 @@
                     </div>
                     <p> 15 Reviews</p>
                 </div>
-                <div class="">
-                    <h1> product options</h1>
+                <div class=>
+                    <h1 class="py-2"> product options</h1>
                     <button class="border bg-amber-300 p-2 rounded capitalize ">starter kit pack</button>
                     <button class="border bg-[#f1e9dc] p-2 rounded capitalize">refill vitamins only</button>
                 </div>
                  <div>
-                    <h1> age group </h1>
+                    <h1 class="py-2"> age group </h1>
                     <button class="border bg-amber-300 p-2 rounded capitalize">2-8</button>
                     <button class="border bg-[#f1e9dc] p-2 rounded capitalize">9-12</button>
                 </div>
                  <div>
-                    <h1>select number of kids</h1>
+                    <h1 class="py-2">select number of kids</h1>
                     <button class="border bg-amber-300 p-2 rounded capitalize">1 kid</button>
                     <button class="border bg-[#f1e9dc] p-2 rounded capitalize">2 kid</button>
                     <button class="border bg-[#f1e9dc] p-2 rounded capitalize">3 kid</button>
                     <button class="border bg-[#f1e9dc] p-2 rounded capitalize">4 kid</button>
                     <button class="border bg-[#f1e9dc] p-2 rounded capitalize">5 kid</button>
                 </div>
-                <div class="max-w-md space-y-4 font-sans p-6">
+                <!-- subcribe section -->
+                <div class=" my-3 py-2">
   
-             <div class="relative bg-[#FFF2A0] border-2 border-[#FF8A5B] rounded-3xl p-6 shadow-sm">
-             <div class="absolute -top-3 -right-2 bg-[#FF8A5B] text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-md">
-              Save up to 50%
-             </div>
+                 <div class="relative bg-[#FFF2A0] border-2 border-[#FF8A5B] rounded-3xl p-9 shadow-sm">
+                 <div class="absolute -top-3 -right-2 bg-[#FF8A5B] text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-md">
+                  Save up to 50%
+                 </div>
 
-             <div class="flex items-start gap-4">
-               <div class="mt-1 w-6 h-6 rounded-full  border-2 border-[#FF8A5B] flex items-center justify-center bg-white">
+                 <div class="flex items-start gap-4">
+                  <div class="mt-1 w-6 h-6 rounded-full  border-2 border-[#FF8A5B] flex items-center justify-center bg-white">
                  <div class="w-3 h-3 bg-[#FF8A5B] rounded-full"></div>
-              </div>
+                 </div>
 
-              <div class="flex-1">
+                 <div class="flex-1">
                  <h3 class="text-xl font-bold text-black">Subscribe & Save / Kid</h3>
                  <div class="flex items-center gap-2 mt-1">
                     <span class="text-[#FFB1B1] line-through text-lg">$123.50</span>
@@ -140,7 +142,7 @@
               </div>
           </div>
 
-            <div class="border-2 border-[#FF8A5B] rounded-3xl p-6 flex items-center gap-4">
+            <div class="border-2 border-[#FF8A5B] rounded-3xl my-2 p-1 lg:p-6 flex items-center gap-4">
                 <div class="w-6 h-6 rounded-full border-2 border-gray-200 bg-white"></div>
                 <div>
                  <h3 class="text-xl font-bold text-black">One-time / Kid</h3>
@@ -150,11 +152,26 @@
 
                  </div>
                  <div>
-                    <button class="px-30 ml-6 mt-6  py-5 text-sm md:text-lg border border-black bg-yellow-400 rounded-xl ">
-                       Add to cart
-                    </button>
+                    <button class=" flex items-center justify-between w-full  bg-[#ffde59] border-[1.5px] border-slate-900 rounded-2xl p-2 pl-8 transition-all hover:bg-[#f7d347]">
+                    <span class="text-[#1a2b3c] text-xl font-semibold">
+                         Add to cart
+                    </span>
+
+                     <div class="bg-[#ff5a3d] p-3 rounded-xl flex items-center justify-center">
+                      <svg 
+                       xmlns="http://www.w3.org/2000/svg" 
+                       class="h-6 w-6 text-[#1a2b3c]" 
+                       fill="none" 
+                       viewBox="0 0 24 24" 
+                        stroke="currentColor" 
+                        stroke-width="2.5"
+                             >
+                       <path stroke-linecap="round" stroke-linejoin="round" d="M17 7l-10 10M17 7H7M17 7v10" />
+                     </svg>
+                  </div>
+               </button>
                  </div>
-                 <div>
+                 <div class="mt-2">
                     <h4>What's Included:</h4>
                     <div class="flex gap-3 py-5">
                         <div class="w-20 ">
@@ -235,7 +252,7 @@
 
              </div> 
              <!-- faq -->
-             <div  class="bg-[#f8f4ed] h-fit border-black border-2 p-8 mt-5 rounded-3xl ">
+             <div  class="bg-[#f8f4ed]  border-black border p-8 my-5  rounded-3xl  ">
                <details class=" border-black border-b-2 py-7">
                 <summary class="hover:text-[#fb693e] transition duration-300 text-2xl">Benefits</summary>
                 <h1>Supports immune system health</h1>
@@ -322,7 +339,7 @@
         <div class="bg-[#ccd0ef] py-5 ">
             <div class=" flex flex-col-reverse lg:flex-row items-center justify-between gap-6 px-4 md:px-10 lg:px-16 lg:py-16">
             <div class=" flex flex-col   justify-center lg:w-[40%] " >
-                <h1  class="font-pouf uppercase text-5xl lg:text-7xl ">tummy time</h1>
+                <h1  class="font-pouf uppercase text-3xl lg:text-7xl ">tummy time</h1>
                 <p class="text-xl py-4">KIDS PRE + PROBIOTIC</p>
                 <p>Tummy Time is a high-quality pre + probiotic powder designed to support your child’s digestion, immunity, and overall wellbeing—starting from the inside out.</p>
                 <button class="px-6 mt-6  py-5 text-sm md:text-lg border border-none bg-yellow-400 rounded-xl">
@@ -330,7 +347,7 @@
                </button>
             </div>
             <div>
-             <div class=" h-60 w-80 lg:h-120 lg:w-122.5 overflow-hidden"
+             <div class=" h-60 w-70 lg:h-120 lg:w-122.5 overflow-hidden"
               style="-webkit-mask-image: url(#scalable-mask); mask-image: url(#scalable-mask);">
     
              <img src="./assets/images/tummy starter.jpg" 
@@ -350,7 +367,7 @@
             </div>
               <div class="flex flex-col lg:flex-row items-center justify-between gap-6 px-4 py-7 md:px-10 lg:px-16 lg:py-16">
               <div>
-             <div class="h-60 w-80 lg:h-120 lg:w-122.5 overflow-hidden  "
+             <div class="h-60 w-70 lg:h-120 lg:w-122.5 overflow-hidden  "
                 style="-webkit-mask-image: url(#scalable-mask); mask-image: url(#scalable-mask);">
     
                <img src="./assets/images/grow starter.png" 
@@ -368,7 +385,7 @@
             </svg>
             </div>
             <div class=" flex flex-col   justify-center lg:w-[40%]" >
-                <h1  class="font-pouf uppercase text-5xl lg:text-6xl ">grow+thrive</h1>
+                <h1  class="font-pouf uppercase text-3xl lg:text-6xl ">grow+thrive</h1>
                 <p class="text-xl py-4 ">KIDS MULTIVITAMIN</p>
                 <p class="">Grow+Thrive is a powerhouse multivitamin that supports your child’s energy, growth, immunity, and more—all in one delicious chewable.</p>
                 <button class="px-6 mt-6  py-5 pt-7 text-sm md:text-lg border border-none bg-yellow-400 rounded-xl">
@@ -378,7 +395,7 @@
               </div>
               <div class=" flex flex-col lg:flex-row items-center justify-between gap-6 px-4 md:px-10 lg:px-16 lg:py-16">
             <div class=" flex flex-col   justify-center lg:w-[40%] " >
-                <h1  class="font-pouf uppercase text-5xl lg:text-7xl ">boost</h1>
+                <h1  class="font-pouf uppercase text-3xl lg:text-7xl ">boost</h1>
                 <p class="text-xl py-4">VITAMINS FOR IMMUNITY SUPPORT</p>
                 <p>Boost is your kid’s daily sidekick for staying well. Whether they’re heading into school, cold season, or a jam-packed week of playdates, Boost delivers proven immune support with zero added sugar, zero fake stuff, and 100% parent peace of mind.</p>
                 <button class="px-6 mt-6  py-5 text-sm md:text-lg border border-none bg-yellow-400 rounded-xl">
@@ -386,7 +403,7 @@
                </button>
             </div>
             <div>
-             <div class=" h-60 w-80 lg:h-120 lg:w-122.5 overflow-hidden"
+             <div class=" h-60 w-70 lg:h-120 lg:w-122.5 overflow-hidden"
               style="-webkit-mask-image: url(#scalable-mask); mask-image: url(#scalable-mask);">
     
              <img src="./assets/images/boost starter.jpg" 
@@ -413,12 +430,13 @@
              </video>
             </div>
             <!--  -->
-            <div class="bg-[#87e1cf] flex justify-center items-center w-full min-h-96 mt-5">
-                <h1 class="font-pouf uppercase text-5xl lg:text-8xl lg:leading-2">all essential in one </h1>
+            <div class="bg-[#87e1cf] flex justify-center items-center p-5 w-full min-h-96 mt-5">
+                <h1 class="font-pouf uppercase mx-auto text-5xl lg:text-8xl lg:leading-2">all essential in one </h1>
+                
                  
             </div>
             <!-- faq -->
-             <div class="border-2 border-black bg-[#f8f4ed] rounded-3xl p-9 w-[90%] mt-8  mx-auto flex flex-col  justify-between">
+             <div class="border-2 border-black bg-[#f8f4ed] rounded-3xl px-10 w-[90%] mt-8  mx-auto flex flex-col  justify-between">
                 <h1 class="font-pouf uppercase text-5xl lg:text-7xl pt-20 pb-10">FAQs</h1>
                 <details class=" border-black border-b-2 py-7">
                  <summary class="hover:text-[#fb693e] transition duration-300 text-2xl">Are the products bundled in the Starter Kit vegan?</summary>
@@ -488,10 +506,206 @@
            
             </div>
         </div>
+        <!-- skipped the customer appreciation section -->
+         <!-- orange section -->
+         <div class="bg-[#ff8460] ">
+               <div class="flex flex-col lg:flex-row  gap-6 px-4 py-7 md:px-10 lg:px-16 lg:py-16">
+              <div>
+             <div class="h-60 w-70 lg:h-120 lg:w-122.5 overflow-hidden  "
+                style="-webkit-mask-image: url(#scalable-mask); mask-image: url(#scalable-mask);">
+    
+               <img src="./assets/images/orange.png" 
+               alt="pack" 
+               class="w-full h-full object-cover  ">
+    
+             </div>
+
+              <svg width="0" height="0" style="position:absolute;">
+              <defs>
+             <mask id="scalable-mask" maskContentUnits="objectBoundingBox">
+             <path fill="white" d="M0.51,0 C0.59,0.001,0.66,0.005,0.74,0.011 A0.38,0.38,0,0,1,0.86,0.041 C0.93,0.07,0.97,0.126,0.99,0.20 C1.00,0.25,1.01,0.30,1.01,0.35 C1.01,0.44,1.01,0.52,1.01,0.61 C1.01,0.67,1.00,0.74,0.98,0.81 C0.96,0.90,0.90,0.95,0.82,0.98 C0.76,0.99,0.71,1,0.65,1 C0.55,1,0.46,1,0.36,1 C0.30,1,0.25,0.99,0.19,0.97 C0.11,0.95,0.06,0.89,0.03,0.81 C0.02,0.75,0.01,0.69,0.01,0.63 A6.74,6.74,0,0,1,0.01,0.36 C0.01,0.30,0.02,0.24,0.04,0.18 C0.06,0.09,0.12,0.04,0.20,0.02 C0.25,0.01,0.31,0.006,0.36,0.003 C0.41,0,0.46,0,0.51,0 Z"/>
+            </mask>
+            </defs>
+            </svg>
+            </div>
+            <div class=" flex flex-col   justify-center lg:w-[40%]" >
+                <h1  class="font-pouf uppercase text-5xl lg:text-6xl ">grow+thrive</h1>
+                <p class="text-xl py-4 ">KIDS MULTIVITAMIN</p>
+                <p class="">Grow+Thrive is a powerhouse multivitamin that supports your child’s energy, growth, immunity, and more—all in one delicious chewable.</p>
+                <button class="px-6 mt-6  py-5 pt-7 text-sm md:text-lg border border-none bg-yellow-400 rounded-xl">
+                Find out more
+               </button>
+            </div>
+              </div>
+              <!-- vitamin section -->
+                <div class="flex flex-col    ">
+                  <div class="  border border-[#f8f4ed] bg-[#f8f4ed] rounded-3xl px-7  mx-2 flex flex-col  lg:hidden">
+                   <h2 class="font-pouf uppercase text-4xl pl-3 pt-20">
+                    SHOP VITAMINS
+                   </h2>
+                   <div class="">
+                    <div class="flex flex-col items-center justify-center p-3 my-3">
+                    <img src="./assets/images/imgi_9_Kit-bundle_Cutout_1.png" alt="cutout" class="w-56 ">
+                    <h1 class="font-pouf  text-3xl ">STARTER KIT</h1>
+                    <P class="">ALL 3 VITAMINS</P>
+                    <button class="  px-30 py-4 text-lg bg-[#E8E0D3] border border-[#E8E0D3] rounded-xl my-5">
+                     Shop Now
+                    </button>
+                </div>
+                <div class="p-3 flex flex-col items-center justify-center">
+                  <img src="./assets/images/orange boost.png" alt="cutout" class="w-56">
+                    <h1  class="font-pouf text-3xl  ">GROW+THRIVE</h1>
+                    <p class="">MULTI-VITAMIN</p>
+                    <button class=" px-30 py-4 text-lg bg-[#E8E0D3] border border-[#E8E0D3] rounded-xl my-5">
+                     Shop Now
+                    </button>
+                </div>
+                <div class="p-3 flex flex-col items-center justify-center">
+                  <img src="./assets/images/yellow tummy.png" alt="cutout" class="w-56">
+                    <h1  class="font-pouf   text-3xl  ">BOOST</h1>
+                    <p class="">IMMUNITY</p>
+                    <button class="px-30 py-4 text-lg bg-[#E8E0D3] border  border-[#E8E0D3] rounded-xl my-5">
+                     Shop Now
+                    </button>
+                </div>
+                <div class="p-3 flex flex-col items-center justify-center">
+                  <img src="./assets/images/green thrive.png" alt="CUTOUT" class="w-56">
+                    <h1  class="font-pouf  text-3xl ">TUMMY TIME</h1>
+                    <p class="">PRE + PROBIOTICS</p>
+                    <button class="px-30 py-4 text-lg bg-[#E8E0D3] border border-[#E8E0D3] rounded-xl my-5">
+                     Shop Now
+                    </button>
+                </div>
+            </div>
+
+         </div>
+         </div>
+        <div class=" hidden relative  w-full py-16  lg:block  ">
+            <img src="./assets/images/imgi_13_shop-list-bg-1.png" alt="shop list" class="lg:px-4 lg:w-full sm:px-8">
+            <h2 class="absolute lg:top-32 top-10 right-1/2 
+           font-pouf text-3xl sm:text-5xl md:text-6xl text-center px-4 m">
+               SHOP VITAMINS
+           </h2>
+            
+            <div class="absolute flex items-center justify-between px-8 top-20 inset-0 ">
+                <div class="p-10">
+                    <img src="./assets/images/imgi_9_Kit-bundle_Cutout_1.png" alt="cutout" class="">
+                    <h1 class="font-pouf  flex items-center justify-center text-3xl ">STARTER KIT</h1>
+                    <P class="flex items-center justify-center">ALL 3 VITAMINS</P>
+                    <button class=" mx-auto flex items-center justify-center px-2 py-2 text-lg bg-[#fb693e] border rounded-xl my-5">
+                     Shop Now
+                    </button>
+                </div>
+                <div class="p-10">
+                  <img src="./assets/images/orange boost.png" alt="cutout">
+                    <h1  class="font-pouf  flex items-center justify-center text-3xl  ">GROW+THRIVE</h1>
+                    <p class="flex items-center justify-center">MULTI-VITAMIN</p>
+                    <button class=" mx-auto flex items-center justify-center px-2 py-2 text-lg bg-[#fb693e] border rounded-xl my-5">
+                     Shop Now
+                    </button>
+                </div>
+                <div class="p-10">
+                  <img src="./assets/images/green thrive.png" alt="cutout">
+                    <h1  class="font-pouf  flex items-center justify-center text-3xl  ">BOOST</h1>
+                    <p class="flex items-center justify-center">IMMUNITY</p>
+                    <button class=" mx-auto flex items-center justify-center px-2 py-2 text-lg bg-[#fb693e] border rounded-xl my-5">
+                     Shop Now
+                    </button>
+                </div>
+                <div class="p-10">
+                  <img src="./assets/images/yellow tummy.png" alt="CUTOUT">
+                    <h1  class="font-pouf flex items-center justify-center text-3xl ">TUMMY TIME</h1>
+                    <p class="flex items-center justify-center">PRE + PROBIOTICS</p>
+                    <button class=" mx-auto flex items-center justify-center px-2 py-2 text-lg bg-[#fb693e] border rounded-xl my-5">
+                     Shop Now
+                    </button>
+                </div>
+            </div>
+        </div> 
+               <!--  -->
+              <div class="flex flex-col lg:flex-row items-center justify-between gap-6 px-4 py-56 md:px-10 lg:px-16 lg:py-16 ">
+                <div class=" flex flex-col   justify-center lg:w-[40%]" >
+                <h1  class="font-pouf uppercase text-5xl lg:text-6xl ">grow+thrive</h1>
+                <p class="text-xl py-4 ">KIDS MULTIVITAMIN</p>
+                <p class="">Grow+Thrive is a powerhouse multivitamin that supports your child’s energy, growth, immunity, and more—all in one delicious chewable.</p>
+                <button class="px-6 mt-6  py-5 pt-7 text-sm md:text-lg border border-none bg-yellow-400 rounded-xl">
+                Find out more
+               </button>
+                </div>
+                <div class="h-60 w-70 lg:h-120 lg:w-122.5 ">
+                    <img src="./assets/images/girl starter.png" alt="" class="">
+                </div>
+            
+              
+
+
+              </div>
+              
+         </div>
        
 
 
     </main>
+     <!-- footer -->
+   <footer class="relative -mt-8 z-10 flex justify-center h-full ">
+     <img src="./assets/images/footer_bg.png" alt="footer_bg" class="flex w-full h-full absolute top-0  -z-10 object-cover ">
+     <img src="./assets/images/footer-logo-1.svg" alt="footer_logo" class=" absolute  animate-spin [animation-duration:5000ms] -top-24 w-40 anim">         
+     <div class=" h-full mt-32 p-2" > 
+       <div class="flex flex-col lg:flex-row justify-between gap-6 items-center  " >
+         <div class="">
+            <h1 class="font-pouf text-3xl uppercase pb-2 ">Join the #koafamily</h1>
+             <p class="text-[15px] pb-4">Sign up for vita-goodness delivered to your inbox.</p>
+             <input class="placeholder-gray-500 border border-black rounded-3xl   px-16 py-2 focus:placeholder-gray-500"  placeholder="Enter your email">
+             <p class="text-[12px] pt-3">By subscribing, you agree to receive marketing emails and accept our Terms & Conditions.</p>
+             <i class="fa-brands fa-square-instagram "></i>
+            <i class="fa-brands fa-square-facebook"></i>
+         </div>
+         <div class=" flex  gap-16 text-[#1f2937] lg:mt-14">
+                      <!-- Left Column -->
+           <div>
+             <h3 class="font-semibold mb-6 text-lg">Meet the vitamins</h3>
+             <ul class="space-y-4">
+               <li>Starter Kit</li>
+               <li>Multi-Vitamin</li>
+               <li>Immunity</li>
+               <li>Pre + Probiotic</li>
+             </ul>
+           </div>
+            <!-- Right Column -->
+           <div>
+             <h3 class="font-semibold mb-6 text-lg">Support</h3>
+             <ul class="space-y-4">
+                <li>My Account</li>
+                <li>Contact Us</li>
+                <li>Shipping &amp; Returns</li>
+                <li>FAQs</li>
+                <li>Terms &amp; Conditions</li>
+                <li>Privacy Policy</li>
+                <li>Blog</li>
+             </ul>
+           </div>
+
+        </div>   
+     </div>
+      <div>
+       <div class="flex justify-center items-center gap-4  p-5">
+          <h1 class="border-2 border-black lg:border w-30 lg:w-100"></h1>
+          <img src="./assets/images/imgi_5_koa-primarylogo-zinc_web_2_aa42876d-23ed-4af7-96bc-71c9e7604f2c.svg" alt="logo-footer" class="w-30">
+          <h1  class="border-2 lg:border border-black w-30 lg:w-100" ></h1>
+      </div>
+      <div class="pt-5 ">
+        <p>© 2025, KOA Kids. All rights reserved.</p>
+         <div class="flex justify-center items-center pt-4 ">
+           <img src="./assets/images/imgi_44_footer-image-2.png" alt="footer-lmg" class=" w-30 lg:w-full " >
+            <img src="./assets/images/imgi_46_footer-image-4.png" alt="footer-lmg" class="w-30 lg:w-full ">
+            <img src="./assets/images/imgi_45_footer-image-3.png" alt="footer-lmg" class="w-30 lg:w-full ">
+         </div>
+     </div>                 
+   </div>
+    </div>
+
+  </footer>
+  <script src="./wellness.js"></script>
     
 </body>
 </html> 
