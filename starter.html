@@ -327,7 +327,7 @@
            </div>
         </div>
         <!--  -->
-        <div class="flex  items-centergap-2 bg-amber-300 p-5">
+        <div class="flex hidden! items-center gap-2 bg-amber-300 p-5 " id="marquee">
             <h1 class="font-pouf text-5xl uppercase ">backed by science</h1>
             <img src="./assets/images/flower.svg" alt="flora" >
             <h1 class="font-pouf text-5xl uppercase">loved by kids</h1>
@@ -335,6 +335,18 @@
             <h1 class="font-pouf text-5xl uppercase">made by parents</h1 >
             <img src="./assets/images/marquee.svg" alt="marquee">
         </div>
+
+<div class="overflow-hidden -skew-3 translate-y-13 whitespace-nowrap bg-amber-300 p-5 flex items-center" id="marquee-wrapper">
+    <div class="flex items-center gap-x-10 shrink-0 " id="marquee-content">
+        <h1 class="font-pouf text-5xl uppercase">backed by science</h1>
+        <img src="./assets/images/flower.svg" alt="flora" class="w-12">
+        <h1 class="font-pouf text-5xl uppercase">loved by kids</h1>
+        <img src="./assets/images/Sun (1).svg" alt="sun" class="w-12">
+        <h1 class="font-pouf text-5xl uppercase">made by parents</h1>
+        <img src="./assets/images/marquee.svg" alt="marquee" class="w-12">
+    </div>
+</div>
+
         <!--  -->
         <div class="bg-[#ccd0ef] py-5 ">
             <div class=" flex flex-col-reverse lg:flex-row items-center justify-between gap-6 px-4 md:px-10 lg:px-16 lg:py-16">
@@ -901,6 +913,7 @@
 
   </footer>
   <script src="./wellness.js"></script>
+  <script src="./starter.js"></script>
     
 </body>
 </html> 
