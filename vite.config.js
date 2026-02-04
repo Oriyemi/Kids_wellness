@@ -16,6 +16,7 @@ export default defineConfig({
                 starter: resolve(__dirname, 'starter.html'),
                 multivitamin: resolve(__dirname, 'mv.html'),
                 immunity: resolve(__dirname, 'imt.html'),
+                probiotic: resolve(__dirname, 'probiotic.html'),
             },
         },
     },
