@@ -15,6 +15,7 @@ export default defineConfig({
                 shopall: resolve(__dirname, 'shop-all.html'),
                 starter: resolve(__dirname, 'starter.html'),
                 multivitamin: resolve(__dirname, 'mv.html'),
+                immunity: resolve(__dirname, 'imt.html'),
             },
         },
     },
