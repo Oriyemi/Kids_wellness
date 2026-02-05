@@ -17,6 +17,7 @@ export default defineConfig({
                 multivitamin: resolve(__dirname, 'mv.html'),
                 immunity: resolve(__dirname, 'imt.html'),
                 probiotic: resolve(__dirname, 'probiotic.html'),
+                community: resolve(__dirname, 'com.html'),
             },
         },
     },
