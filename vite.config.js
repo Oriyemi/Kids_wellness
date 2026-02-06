@@ -14,6 +14,11 @@ export default defineConfig({
                 // and ensure the path points to where it lives (e.g., './wellness.html')
                 shopall: resolve(__dirname, 'shop-all.html'),
                 starter: resolve(__dirname, 'starter.html'),
+                multivitamin: resolve(__dirname, 'mv.html'),
+                immunity: resolve(__dirname, 'imt.html'),
+                probiotic: resolve(__dirname, 'probiotic.html'),
+                community: resolve(__dirname, 'com.html'),
+                about: resolve(__dirname, 'about.html'),
             },
         },
     },
