@@ -11,7 +11,7 @@ const updateNavbar = () => {
                 nav_parent.classList.remove( 'bg-[#f1e9dc]');
                 nav_parent.classList.add('bg-[#ccd0ef]');
         }
-};
+}; 
 
 
 window.addEventListener('scroll', updateNavbar);
