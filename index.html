@@ -43,9 +43,23 @@
                 <span class="absolute -top-2 -right-2 bg-[#fb693e] text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full">0</span>
              </div>
 
-             <i class="fa-solid fa-bars-staggered text-xl lg:hidden cursor-pointer"></i>
+             <i id="hamburger" class="fa-solid fa-bars-staggered text-xl lg:hidden cursor-pointer"></i>
            </div>
           </div>
+           <div id="navigator" class="hidden bg-[#ebe2e2] w-full sm:w-3/4  h-220 p-8  absolute  items-center inset-0 mx-auto rounded-2xl z-10 top-14">
+            <button id="closeBtn" class="absolute top-2  right-2 text-xl">
+             &times; 
+            </button>
+
+              <a href="/starter.html" class="block border-b p-4">Starter</a>
+              <a href="/shop-all.html" class="block border-b p-4">Shop-All</a>
+              <a href="/imt.html" class="block border-b p-4">immunity</a>
+              <a href="/mv.html" class="block p-4">Multi-Vitamin</a>
+              <a href="/probiotic.html" class="block p-4">Probiotics</a>
+              <a href="/com.html" class="block p-4">Community</a>
+              <a href="/about.html" class="block p-4">About</a>
+             
+              </div>
        </nav>
         
            
@@ -79,7 +93,7 @@
          <!-- SHOP VITAMINS SECTION -->
           
 
-         <div class="bg-[#ccd0ef] flex flex-col lg:items-center justify-center  gap-6 p-10">
+         <div class="bg-[#ccd0ef] flex flex-col lg:items-center justify-center px-3 gap-6 p-10">
           <div class="  border border-[#f8f4ed] bg-[#f8f4ed] rounded-3xl  mx-2 flex flex-col  lg:hidden">
           <h2 class="font-pouf uppercase text-4xl mx-auto pt-20 pl-5">
                SHOP VITAMINS
@@ -181,7 +195,7 @@
 
          </div>
          </div>
-        <div class=" hidden relative bg-[#ccd0ef] w-full py-16  lg:block  ">
+        <div class=" hidden relative bg-[#ccd0ef] w-full  py-16  lg:block  ">
             <img src="./assets/images/imgi_13_shop-list-bg-1.png" alt="shop list" class="lg:px-4 lg:w-full sm:px-8">
             <h2 class="absolute lg:top-32 top-10 right-1/2 
            font-pouf text-3xl sm:text-5xl md:text-6xl text-center px-4 m">
@@ -327,7 +341,7 @@
                     </button>
             </div>
         </div>
-        <div class="bg-[#ccd0ef]  flex flex-col items-center lg:flex-row lg:justify-center lg:items-stretch gap-6 p-10"   >
+        <div class="bg-[#ccd0ef]  flex flex-col items-center lg:flex-row px-4 lg:justify-center lg:items-stretch gap-6 p-10"   >
 
  
          <div class="border-2 border-black bg-[#f8f4ed] rounded-3xl p-8 flex flex-col justify-between ">
@@ -529,7 +543,7 @@
               <h1 class="uppercase font-pouf text-5xl lg:text-9xl text-center p-8">Koa families, powering fun</h1>
              </div>
              <!-- koa images -->
-               <div class="bg-[#ccd0ef]  flex flex-col items-center lg:flex-row lg:justify-center lg:items-stretch gap-6 p-10">
+               <div class="bg-[#ccd0ef]  flex flex-col items-center lg:flex-row lg:justify-center lg:items-stretch px-4 gap-6 p-10">
 
  
                 <div class="border-2 border-black bg-[#f8f4ed] rounded-3xl p-8 flex flex-col justify-between  ">
@@ -728,7 +742,7 @@
                 
                 
               
-              
+     <script src="hamburger.js"></script>         
     <script src="./wellness.js"></script>
 </body>
 </html>
