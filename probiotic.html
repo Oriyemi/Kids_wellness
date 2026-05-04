@@ -11,10 +11,10 @@
 <body >
     <main class="bg-[#F8f4ed]">
         <!-- nav-bar -->
-         <nav id="nav-parent" class="sticky top-0 z-50 flex items-center justify-between px-4 md:px-10 py-4 bg-[#fee358] transition-colors duration-500" id="nav-parent">
+         <nav id="nav-parent" class="sticky top-0 z-50 flex items-center justify-between px-4 md:px-10 py-4 bg-[#fee358] transition-colors duration-500" >
     
           <div class="flex-1 hidden lg:flex items-center gap-6">
-            <i class="fa-solid fa-bars text-2xl cursor-pointer hover:text-[#fb693e] transition"></i>
+            <i class="fa-solid fa-bars text-2xl cursor-pointer hover:text-[#fb693e] transition"><a href="/index.html"></a></i>
            <ul class="flex items-center gap-5 font-medium text-[15px] whitespace-nowrap">
             <li class="hover:text-[#fb693e] transition"><a href="/shop-all.html">Shop All</a></li>
             <li class="hover:text-[#fb693e] transition"><a href="/starter.html">Starter Kit</a></li>
@@ -44,26 +44,33 @@
                 <span class="absolute -top-2 -right-2 bg-[#fb693e] text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full">0</span>
              </div>
 
-             <i class="fa-solid fa-bars-staggered text-xl lg:hidden cursor-pointer"></i>
+             <i id="hamburger" class="fa-solid fa-bars-staggered text-xl lg:hidden cursor-pointer"></i>
            </div>
           </div>
+          <div id="navigator" class="hidden bg-[#ffff] w-full sm:w-3/4  h-220 p-8  absolute  items-center inset-0 mx-auto rounded-2xl z-10 top-14">
+            <button id="closeBtn" class="absolute top-2  right-2 text-xl">
+             &times; 
+            </button>
+
+              <a href="/starter.html" class="block border-b p-4">Starter</a>
+              <a href="/shop-all.html" class="block border-b p-4">Shop-All</a>
+              <a href="/imt.html" class="block border-b p-4">immunity</a>
+              <a href="/mv.html" class="block p-4 border-b">Multi-Vitamin</a>
+              <a href="/probiotic.html" class="block p-4 border-b">Probiotics</a>
+              <a href="/com.html" class="block p-4 border-b">Community</a>
+              <a href="/about.html" class="block p-4 border-b">About</a>
+             
+              </div>
         </nav>
         <!-- hero-section -->
          <div class="flex flex-col lg:flex-row lg:justify-center lg:items-center gap-5 ">
             <div class="flex flex-col md:flex-row justify-center gap-4 m-5 items-center">
-                <div class=" p-10 flex flex-col justify-center gap-5 items-center w-74 h-70  overflow-y-scroll scrollbar-thin    scrollbar-thumb-gray-400 scrollbar-track-transparent [&::-webkit-scrollbar]:w-1
-                  [&::-webkit-scrollbar-track]:bg-transparent
-                [&::-webkit-scrollbar-thumb]:bg-gray-400
-                  [&::-webkit-scrollbar-thumb]:rounded-full">
-                    <img src="./assets/images/tummy starter.jpg" alt="grow" class="rounded-[50px]">
-                    <img src="./assets/images/prob packaging.webp" alt="pack" class="rounded-[50px]">
-                    <img src="./assets/images/girl sachet.webp" alt="child" class="rounded-[50px]">
-                    <img src="./assets/images/prob flower.webp" alt="berry" class="rounded-[50px]">
-                    <img src="./assets/images/prob book.webp" alt="book" class="rounded-[50px]">
-                    <img src="./assets/images/prob spill.webp" alt="coin" class="rounded-[50px]">
-                    <img src="./assets/images/sticker.png" alt="sticker" class="rounded-[50px]">
-                    
+                <div id="image-slider " class="flex items-center">
+                  <button id="btn-left" class="mt-20 p-5">←</button>
+                    <img src="./assets/images/tummy starter.jpg" alt="grow" id="image" class="w-70 rounded-4xl mt-20">
+                   <button id="btn-right" class="mt-20 p-5">&rarr;</button>
                 </div>
+                
 
                 <div class="m-5">
                   <div class="bg-[#f8f4ed] border border-black rounded-3xl lg:m-8 m-15 p-5 sm:p-8 ">
@@ -828,7 +835,7 @@
 
     <div class="py-5 text-slate-700">
         <div class="overflow-x-auto">
-            <table class="w-full min-w-[600px] md:min-w-full">
+            <table class="w-full min-w-150 md:min-w-full">
                 <thead>
                     <tr>
                         <th class="w-1/4 p-2 md:p-4"></th>
@@ -1598,5 +1605,7 @@
   </footer>
    <script src="./starter.js"></script>
    <script src="./wellness.js"></script> 
+   <script src="./pro-slider.js"></script>
+   <script src="./hamburger.js"></script>
 </body>
 </html>
