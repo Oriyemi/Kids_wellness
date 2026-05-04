@@ -1,5 +1,4 @@
-
-        const wrapper = document.getElementById('marquee-wrapper');
+const wrapper = document.getElementById('marquee-wrapper');
         const content = document.getElementById('marquee-content');
 
      
